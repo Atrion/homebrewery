@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(`${__dirname}/build`));
 app.use(require('body-parser').json({ limit: '25mb' }));
 app.use(require('cookie-parser')());
-app.use(require('./server/forcessl.mw.js'));
+// app.use(require('./server/forcessl.mw.js'));
 
 const config = require('nconf')
 	.argv()
